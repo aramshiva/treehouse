@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { IBM_Plex_Mono } from 'next/font/google';
-import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
-import { useState } from 'react';
+import Image from "next/image";
+import { IBM_Plex_Mono } from "next/font/google";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import { useState } from "react";
 
-const font = IBM_Plex_Mono({ weight: '500', subsets: ['latin'] });
+const font = IBM_Plex_Mono({ weight: "500", subsets: ["latin"] });
 
 export default function Home() {
   const [startDate, setStartDate] = useState<Date | null>(null);
@@ -40,7 +40,7 @@ export default function Home() {
         </div>
         <form className="w-full max-w-lg space-y-4">
           <div className="flex items-center space-x-2">
-            <p className="text-white text-xl">{'>'}</p>
+            <p className="text-white text-xl">{">"}</p>
             <input
               type="text"
               id="username"
@@ -50,7 +50,7 @@ export default function Home() {
             />
           </div>
           <div className="flex items-center space-x-2">
-            <p className="text-white text-xl">{'>'}</p>
+            <p className="text-white text-xl">{">"}</p>
             <input
               type="email"
               id="email"
@@ -60,7 +60,7 @@ export default function Home() {
             />
           </div>
           <div className="flex items-center space-x-2">
-            <p className="text-white text-xl">{'>'}</p>
+            <p className="text-white text-xl">{">"}</p>
             <input
               type="password"
               id="password"
@@ -70,10 +70,10 @@ export default function Home() {
             />
           </div>
           <div className="flex items-center space-x-2">
-            <p className="text-white text-xl">{'>'}</p>
+            <p className="text-white text-xl">{">"}</p>
             <DatePicker
               selected={startDate}
-              onChange={(date: Date | null) => setStartDate(date)} 
+              onChange={(date: Date | null) => setStartDate(date)}
               className="w-full p-4 text-white bg-transparent border-2 border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-green-300"
               placeholderText="Birthdate"
               calendarClassName="react-datepicker__calendar"
