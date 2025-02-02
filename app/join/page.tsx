@@ -30,7 +30,7 @@ export default function Home() {
             Login with Slack
           </button>
           <button className="bg-[#333] text-white py-4 px-12 text-xl rounded-md focus:outline-none transform transition-all duration-300 hover:bg-[#444] hover:scale-105 hover:shadow-lg">
-            Login with Github
+            Login with GitHub
           </button>
         </div>
         <div className="w-full flex items-center mb-8">
