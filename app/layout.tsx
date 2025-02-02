@@ -16,7 +16,7 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Greenhouse",
   description: "Educational codespaces",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  icons: [{ rel: "icon", url: "favicon.ico" }],
 };
 
 export default function RootLayout({
